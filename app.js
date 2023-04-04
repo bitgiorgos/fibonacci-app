@@ -7,7 +7,7 @@ app.get('/fibonacci/:number', (req, res) => {
   const number = parseInt(req.params.number);
   const fibonacci = [0, 1];
 
-  // // If the input is not a number, return an error response
+  //  If the input is not a number, return an error response
   if (isNaN(number)) {
     res.status(400).send('Invalid input');
     return;
@@ -19,7 +19,7 @@ app.get('/fibonacci/:number', (req, res) => {
     return;
   }
 
-  // // If the input number is too large, return an error response
+  //  If the input number is too large, return an error response
   if (number > 1476) {
     res.status(400).send('Number too large');
     return;
